@@ -1,8 +1,8 @@
-cmd_/home/user/work/embsys/module_programming/hello_module/hello.o := arm-linux-gnueabi-gcc -Wp,-MD,/home/user/work/embsys/module_programming/hello_module/.hello.o.d  -nostdinc -isystem /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/include -I./arch/arm/include -Iarch/arm/include/generated/uapi -Iarch/arm/include/generated  -Iinclude -I./arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-bcm2708/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=6 -march=armv6 -mtune=arm1136j-s -msoft-float -Uarm -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)" -c -o /home/user/work/embsys/module_programming/hello_module/.tmp_hello.o /home/user/work/embsys/module_programming/hello_module/hello.c
+cmd_/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.o := arm-linux-gnueabi-gcc -Wp,-MD,/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/.hello.o.d  -nostdinc -isystem /usr/lib/gcc-cross/arm-linux-gnueabi/4.7/include -I./arch/arm/include -Iarch/arm/include/generated/uapi -Iarch/arm/include/generated  -Iinclude -I./arch/arm/include/uapi -Iarch/arm/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-bcm2708/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -mfpu=vfp -funwind-tables -marm -D__LINUX_ARM_ARCH__=6 -march=armv6 -mtune=arm1136j-s -msoft-float -Uarm -fno-delete-null-pointer-checks -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(hello)"  -D"KBUILD_MODNAME=KBUILD_STR(hello)" -c -o /home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/.tmp_hello.o /home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.c
 
-source_/home/user/work/embsys/module_programming/hello_module/hello.o := /home/user/work/embsys/module_programming/hello_module/hello.c
+source_/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.o := /home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.c
 
-deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
+deps_/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.o := \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
@@ -220,7 +220,6 @@ deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
-    $(wildcard include/config/prove/rcu.h) \
   include/linux/rwlock_types.h \
   include/linux/spinlock_up.h \
   arch/arm/include/asm/processor.h \
@@ -247,13 +246,14 @@ deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
   include/linux/time64.h \
   include/uapi/linux/time.h \
   include/linux/uidgid.h \
+    $(wildcard include/config/multiuser.h) \
     $(wildcard include/config/user/ns.h) \
   include/linux/highuid.h \
   include/linux/kmod.h \
   include/linux/gfp.h \
-    $(wildcard include/config/numa.h) \
     $(wildcard include/config/zone/dma.h) \
     $(wildcard include/config/zone/dma32.h) \
+    $(wildcard include/config/numa.h) \
     $(wildcard include/config/pm/sleep.h) \
     $(wildcard include/config/cma.h) \
   include/linux/mmdebug.h \
@@ -312,6 +312,7 @@ deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
   include/asm-generic/rwsem.h \
   include/linux/srcu.h \
   include/linux/rcupdate.h \
+    $(wildcard include/config/tiny/rcu.h) \
     $(wildcard include/config/tree/rcu.h) \
     $(wildcard include/config/preempt/rcu.h) \
     $(wildcard include/config/rcu/trace.h) \
@@ -319,16 +320,15 @@ deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
     $(wildcard include/config/rcu/user/qs.h) \
     $(wildcard include/config/rcu/nocb/cpu.h) \
     $(wildcard include/config/tasks/rcu.h) \
-    $(wildcard include/config/tiny/rcu.h) \
     $(wildcard include/config/debug/objects/rcu/head.h) \
     $(wildcard include/config/hotplug/cpu.h) \
+    $(wildcard include/config/prove/rcu.h) \
     $(wildcard include/config/rcu/boost.h) \
     $(wildcard include/config/rcu/nocb/cpu/all.h) \
     $(wildcard include/config/no/hz/full/sysidle.h) \
   include/linux/cpumask.h \
     $(wildcard include/config/cpumask/offstack.h) \
     $(wildcard include/config/debug/per/cpu/maps.h) \
-    $(wildcard include/config/disable/obsolete/cpumask/functions.h) \
   include/linux/completion.h \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
@@ -376,6 +376,10 @@ deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
   include/uapi/linux/sysctl.h \
   include/linux/elf.h \
   arch/arm/include/asm/elf.h \
+    $(wildcard include/config/vdso.h) \
+  arch/arm/include/asm/auxvec.h \
+  arch/arm/include/uapi/asm/auxvec.h \
+  arch/arm/include/asm/vdso_datapage.h \
   arch/arm/include/asm/user.h \
   include/uapi/linux/elf.h \
   include/uapi/linux/elf-em.h \
@@ -403,6 +407,6 @@ deps_/home/user/work/embsys/module_programming/hello_module/hello.o := \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
 
-/home/user/work/embsys/module_programming/hello_module/hello.o: $(deps_/home/user/work/embsys/module_programming/hello_module/hello.o)
+/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.o: $(deps_/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.o)
 
-$(deps_/home/user/work/embsys/module_programming/hello_module/hello.o):
+$(deps_/home/user/work/embsys/raspberry-pi-linux/module_programming/hello_module/hello.o):
