@@ -5,7 +5,7 @@
 
 int init_module(void)
 {
-	printk(KERN_ALERT"Hello World %c\n",current->comm[0]);
+	printk(KERN_ALERT"Hello World %s\n",current->comm);
 	return 0;
 }
 
