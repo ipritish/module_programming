@@ -74,7 +74,7 @@ static int device_open(struct inode *inode, struct file *file)
 	if (Device_Open)
 		return -EBUSY;
 	Device_Open++;
-	sprintf(msg, "I already told you %d times Hello world!\n", counter++);
+	sprintf(msg, "gimme break I already told you %d times Hello world!\n", counter++);
 	msg_Ptr = msg;
 	try_module_get(THIS_MODULE);
 	return SUCCESS;
