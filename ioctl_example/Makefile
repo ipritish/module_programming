@@ -1,4 +1,4 @@
-obj-m += hello.o
+obj-m += chrdevio.o
 all:
 	make -C /home/user/work/embsys/raspberry-pi-linux/linux M=$(PWD) modules
 
