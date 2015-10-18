@@ -47,6 +47,7 @@ int proc_init (void) {
  //create_new_proc_entry();
  proc_create("hello",0,NULL,&proc_fops);
  msg = kmalloc(GFP_KERNEL,10*sizeof(char));
+ msg = "help here";
  return 0;
 }
 
