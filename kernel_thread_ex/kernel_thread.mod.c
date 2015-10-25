@@ -17,10 +17,10 @@ __attribute__((section(".gnu.linkonce.this_module"))) = {
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0x5f16678d, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0xab1b8865, __VMLINUX_SYMBOL_STR(kthread_stop) },
-	{ 0x7940511e, __VMLINUX_SYMBOL_STR(wake_up_process) },
-	{ 0xebd31cf0, __VMLINUX_SYMBOL_STR(kthread_create_on_node) },
+	{ 0x332aef30, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0xa93fb94e, __VMLINUX_SYMBOL_STR(kthread_stop) },
+	{ 0xa5db4f48, __VMLINUX_SYMBOL_STR(wake_up_process) },
+	{ 0xcd8baa98, __VMLINUX_SYMBOL_STR(kthread_create_on_node) },
 	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
 	{ 0x7d11c268, __VMLINUX_SYMBOL_STR(jiffies) },
 	{ 0x1000e51, __VMLINUX_SYMBOL_STR(schedule) },

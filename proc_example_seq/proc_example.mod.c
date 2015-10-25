@@ -17,16 +17,16 @@ __attribute__((section(".gnu.linkonce.this_module"))) = {
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0x52b0b69b, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0x47c8d9bb, __VMLINUX_SYMBOL_STR(single_release) },
-	{ 0x8de27c5f, __VMLINUX_SYMBOL_STR(seq_read) },
-	{ 0xef546cef, __VMLINUX_SYMBOL_STR(seq_lseek) },
-	{ 0x7fbce621, __VMLINUX_SYMBOL_STR(remove_proc_entry) },
+	{ 0x332aef30, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x4ba68ead, __VMLINUX_SYMBOL_STR(single_release) },
+	{ 0xc416f8ca, __VMLINUX_SYMBOL_STR(seq_read) },
+	{ 0x3832f140, __VMLINUX_SYMBOL_STR(seq_lseek) },
+	{ 0x80689e3f, __VMLINUX_SYMBOL_STR(remove_proc_entry) },
 	{ 0x27e1a049, __VMLINUX_SYMBOL_STR(printk) },
-	{ 0x66d9bf76, __VMLINUX_SYMBOL_STR(proc_create_data) },
+	{ 0x8bc242c6, __VMLINUX_SYMBOL_STR(proc_create_data) },
 	{ 0xce8b3243, __VMLINUX_SYMBOL_STR(seq_printf) },
 	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
-	{ 0x5e6559c0, __VMLINUX_SYMBOL_STR(single_open) },
+	{ 0xa9db7d5a, __VMLINUX_SYMBOL_STR(single_open) },
 	{ 0xb1ad28e0, __VMLINUX_SYMBOL_STR(__gnu_mcount_nc) },
 };
 

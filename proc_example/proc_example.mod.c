@@ -17,11 +17,11 @@ __attribute__((section(".gnu.linkonce.this_module"))) = {
 static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
-	{ 0x52b0b69b, __VMLINUX_SYMBOL_STR(module_layout) },
-	{ 0x7fbce621, __VMLINUX_SYMBOL_STR(remove_proc_entry) },
-	{ 0x9a7798dc, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
-	{ 0x29a6e3d2, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
-	{ 0x66d9bf76, __VMLINUX_SYMBOL_STR(proc_create_data) },
+	{ 0x332aef30, __VMLINUX_SYMBOL_STR(module_layout) },
+	{ 0x80689e3f, __VMLINUX_SYMBOL_STR(remove_proc_entry) },
+	{ 0x57fa1608, __VMLINUX_SYMBOL_STR(kmalloc_caches) },
+	{ 0x5c000ff0, __VMLINUX_SYMBOL_STR(kmem_cache_alloc_trace) },
+	{ 0x8bc242c6, __VMLINUX_SYMBOL_STR(proc_create_data) },
 	{ 0x67c2fa54, __VMLINUX_SYMBOL_STR(__copy_to_user) },
 	{ 0x2e5810c6, __VMLINUX_SYMBOL_STR(__aeabi_unwind_cpp_pr1) },
 	{ 0xfbc74f64, __VMLINUX_SYMBOL_STR(__copy_from_user) },
